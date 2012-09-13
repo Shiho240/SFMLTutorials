@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1347574573 source:c:\users\mastershihochief\documents\sfml tutorials\test\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iomanip>
+	<iostream>
+

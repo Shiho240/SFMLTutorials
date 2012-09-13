@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1347064687 source:c:\users\mastershihochief\documents\sfml tutorials\tutorials\main.cpp
+	<SFML/System.hpp>
+	<iostream>
+

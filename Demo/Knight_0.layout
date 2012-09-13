@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\imageman.h" open="1" top="0" tabpos="2">
+		<Cursor position="333" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="666" topLine="0" />
+	</File>
+	<File name="src\imageman.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="597" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

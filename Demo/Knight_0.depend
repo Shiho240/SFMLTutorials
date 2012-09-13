@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1347573154 source:c:\users\kevin\documents\sfml\knight_0\main.cpp
+	<SFML/Audio.hpp>
+	"include/imageman.h"
+	<iostream>
+
+1328677249 source:c:\users\kevin\documents\sfml\knight_0\src\imageman.cpp
+	"../include/imageman.h"
+
+1328677255 c:\users\kevin\documents\sfml\knight_0\include\imageman.h
+	<SFML/Graphics.hpp>
+
+1328677249 source:c:\users\kevin\desktop\knight_0\src\imageman.cpp
+	"../include/imageman.h"
+
+1328677255 c:\users\kevin\desktop\knight_0\include\imageman.h
+	<SFML/Graphics.hpp>
+
+1347573154 source:c:\users\kevin\desktop\knight_0\main.cpp
+	<SFML/Audio.hpp>
+	"include/imageman.h"
+	<iostream>
+
+1328680850 source:c:\users\mastershihochief\documents\sfml tutorials\demo\src\imageman.cpp
+	"../include/imageman.h"
+
+1328680856 c:\users\mastershihochief\documents\sfml tutorials\demo\include\imageman.h
+	<SFML/Graphics.hpp>
+
+1347573156 source:c:\users\mastershihochief\documents\sfml tutorials\demo\main.cpp
+	<SFML/Audio.hpp>
+	"include/imageman.h"
+	<iostream>
+
