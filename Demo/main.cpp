@@ -1,6 +1,7 @@
 #include <SFML/Audio.hpp>
 #include "include/imageman.h"
 #include <iostream>
+#include "collision.h"
 using namespace sf;
 
 
@@ -19,6 +20,7 @@ imageman Imageman;    //init image manager and load images
     Imageman.Player.SetCenter(100,150);
     Imageman.Player.SetPosition(100,600);
     Imageman.Player.SetSubRect(IntRect(0,0,75,100));
+    Imageman.Player2.SetPosition(150,450);
 
     int level = 1;  //set lvl to first
 
@@ -28,6 +30,7 @@ imageman Imageman;    //init image manager and load images
     Music1.SetLoop(true);
     Music1.Play();
 
+    Collision Collision;
 while(Game.IsOpened())
 {
         Event Event;
@@ -50,19 +53,19 @@ while(Game.IsOpened())
         if (Game.GetInput().IsKeyDown(Key::Right) && View.GetCenter().x < view_max && Imageman.Player.GetPosition().x > view_min) View.Move( Offset,  0);
 
         //Move Player
-        if(Game.GetInput().IsKeyDown(Key::Left) && Imageman.Player.GetPosition().x > 100)
+        if(Game.GetInput().IsKeyDown(Key::Left) && Imageman.Player.GetPosition().x > 100 && (Collision.PixelPerfectTest(Imageman.Player, Imageman.Background, 127) == false))
         {
             Imageman.Player.SetSubRect(IntRect(75,0,150,100));
             Imageman.Player.Move(-Offset, 0);
         }
-        if (Game.GetInput().IsKeyDown(Key::Right) && Imageman.Player.GetPosition().x < (view_max + 200))
+        if (Game.GetInput().IsKeyDown(Key::Right) && Imageman.Player.GetPosition().x < (view_max + 200) && ((Collision.PixelPerfectTest(Imageman.Player, Imageman.Background, 127) == false) || Imageman.Player.GetPosition().y < 600))
         {
             Imageman.Player.Move(Offset, 0);
             Imageman.Player.SetSubRect(IntRect(0,0,75,100));
         }
         if (Game.GetInput().IsKeyDown(Key::Up) && Imageman.Player.GetPosition().y > 500) Imageman.Player.Move(0, -Offset);
 
-        if (!Game.GetInput().IsKeyDown(Key::Up) && Imageman.Player.GetPosition().y < 600) Imageman.Player.Move(0, Offset);
+        if (!Game.GetInput().IsKeyDown(Key::Up) && Imageman.Player.GetPosition().y < 600 && (Collision.PixelPerfectTest(Imageman.Player, Imageman.Background, 127) == false)) Imageman.Player.Move(0, Offset);
 
         //load new level
         if(Imageman.Player.GetPosition().x > 900 && level == 1)
@@ -93,6 +96,7 @@ while(Game.IsOpened())
        // Vector2f PlayerPos = Game.ConvertCoords(Game.GetInput().GetMouseX(), Game.GetInput().GetMouseY());
         //Imageman.Player.SetPosition(PlayerPos);
         Game.Draw(Imageman.Player);
+        Game.Draw(Imageman.Player2);
 
         // Reset to the default view to draw the interface
         Game.SetView(Game.GetDefaultView());

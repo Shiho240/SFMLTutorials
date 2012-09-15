@@ -6,10 +6,11 @@ imageman::imageman()
     BackgroundImage.LoadFromFile("images/background.png");
     BackgroundImage2.LoadFromFile("images/background2.png");
     PlayerImage.LoadFromFile("images/knight_0.png");
+    BackgroundImage.CreateMaskFromColor(Color(255,0,255), 0);
     PlayerImage.CreateMaskFromColor(Color(255,0,255),0);
     Background.SetImage(BackgroundImage);
     Player.SetImage(PlayerImage);
-
+    Player2.SetImage(PlayerImage);
     // Resize the background, so that it's much bigger than the window
 
 

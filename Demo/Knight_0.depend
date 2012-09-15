@@ -21,14 +21,21 @@
 	"include/imageman.h"
 	<iostream>
 
-1328680850 source:c:\users\mastershihochief\documents\sfml tutorials\demo\src\imageman.cpp
+1347668505 source:c:\users\mastershihochief\documents\sfml tutorials\demo\src\imageman.cpp
 	"../include/imageman.h"
 
-1328680856 c:\users\mastershihochief\documents\sfml tutorials\demo\include\imageman.h
+1347667159 c:\users\mastershihochief\documents\sfml tutorials\demo\include\imageman.h
 	<SFML/Graphics.hpp>
 
-1347573156 source:c:\users\mastershihochief\documents\sfml tutorials\demo\main.cpp
+1347669011 source:c:\users\mastershihochief\documents\sfml tutorials\demo\main.cpp
 	<SFML/Audio.hpp>
 	"include/imageman.h"
 	<iostream>
+	"collision.h"
+
+1347667027 source:c:\users\mastershihochief\documents\sfml tutorials\demo\collision.cpp
+	<SFML/Graphics.hpp>
+	"Collision.h"
+
+1347667059 c:\users\mastershihochief\documents\sfml tutorials\demo\collision.h
 

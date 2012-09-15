@@ -11,6 +11,7 @@ class imageman
         Image BackgroundImage, BackgroundImage2;
         Image PlayerImage;
         Sprite Player;
+        Sprite Player2;
         Sprite Background;
         Sprite Background2;
         void SetBackground2();
